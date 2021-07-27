@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tanvirport/static/css/main.f6686bb5.chunk.css",
+    "main.js": "/tanvirport/static/js/main.e895b0ea.chunk.js",
+    "main.js.map": "/tanvirport/static/js/main.e895b0ea.chunk.js.map",
+    "runtime-main.js": "/tanvirport/static/js/runtime-main.597e7fb2.js",
+    "runtime-main.js.map": "/tanvirport/static/js/runtime-main.597e7fb2.js.map",
+    "static/js/2.a702a69d.chunk.js": "/tanvirport/static/js/2.a702a69d.chunk.js",
+    "static/js/2.a702a69d.chunk.js.map": "/tanvirport/static/js/2.a702a69d.chunk.js.map",
+    "index.html": "/tanvirport/index.html",
+    "static/css/main.f6686bb5.chunk.css.map": "/tanvirport/static/css/main.f6686bb5.chunk.css.map",
+    "static/js/2.a702a69d.chunk.js.LICENSE.txt": "/tanvirport/static/js/2.a702a69d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.597e7fb2.js",
+    "static/js/2.a702a69d.chunk.js",
+    "static/css/main.f6686bb5.chunk.css",
+    "static/js/main.e895b0ea.chunk.js"
+  ]
+}
