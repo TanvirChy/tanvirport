@@ -5,9 +5,8 @@ import { useState } from "react";
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  
+  
 } from "../../data.js";
 import { useEffect } from "react";
 
@@ -24,18 +23,8 @@ export default function Portfolio() {
       id: "web",
       title: "Web App",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+    
+    
   ];
 
   useEffect(() => {
@@ -46,15 +35,7 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
+      
       default:
         setData(featuredPortfolio);
         break;
@@ -66,7 +47,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList
+          <PortfolioList key={item.id}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -74,12 +55,16 @@ export default function Portfolio() {
           />
         ))}
       </ul>
+      
       <div className="container">
         { data.map((d)=>(
            <div className="item">
            <img src={d.img} 
            alt="" />
-           <h3>{d.title}</h3>
+           <h3>
+           <a href={d.demo}>{d.title}</a>
+           </h3>
+           
          </div>
 
         )) }
